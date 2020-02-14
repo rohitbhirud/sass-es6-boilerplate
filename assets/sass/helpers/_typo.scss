@@ -1,0 +1,18 @@
+//============================================================
+// Typography
+//============================================================
+
+// An rem font-size mixin providing fallback to px
+@mixin font-size($sizeValue: 1.4) {
+    $remValue: $sizeValue;
+    $pxValue: ($sizeValue * 10);
+    font-size: #{$pxValue}px;
+    font-size: #{$remValue}rem;
+}
+
+// Requires inline-block or block for proper styling
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

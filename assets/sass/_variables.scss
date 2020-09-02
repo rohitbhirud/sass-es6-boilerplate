@@ -1,20 +1,40 @@
+@import './helpers/mq';
+
 /******************************************
-	Responsive Rules
+    Responsive Rules Using MQ-SASS
+    https://github.com/sass-mq/sass-mq
 ******************************************/
-$res_below_small: "only screen and (max-width : 350px)";
-$res_below_mobile: "only screen and (max-width : 500px)";
-$res_above_mobile: "only screen and (min-width : 500px)";
-$res_below_mini: "only screen and (max-width : 769px)";
-$res_above_mini: "only screen and (min-width : 769px)";
-$res_below_pro: "only screen and (max-width : 1024px)";
+// To enable support for browsers that do not support @media queries,
+// (IE <= 8, Firefox <= 3, Opera <= 9) set $mq-responsive to false
+// Create a separate stylesheet served exclusively to these browsers,
+// meaning @media queries will be rasterized, relying on the cascade itself
+$mq-responsive: true;
 
-$res_only_pro: "only screen and (min-width: 900px) and (max-width : 1100px)";
-$res_only_mini: "only screen and (min-width: 750px) and (max-width : 800px)";
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+$mq-breakpoints: (small: 350px,
+mobile: 500px,
+mini: 769px,
+pro: 1025px,
+desktop: 1280px,
+wide: 1300px,
 
+// Tweakpoints
+desktopAd: 810px,
+mobileLandscape: 480px);
+
+// Define the breakpoint from the $mq-breakpoints list that should
+// be used as the target width when outputting a static stylesheet
+// (when $mq-responsive is set to 'false').
+$mq-static-breakpoint: desktop;
+
+// If you want to display the currently active breakpoint in the top
+// right corner of your site during development, add the breakpoints
+// to this list, ordered by width. For example: (mobile, tablet, desktop).
+$mq-show-breakpoints: (mobile, mini, pro, desktop, wide);
 
 
 /*******************************************
-	Variables
+    Variables
 /*******************************************/
-$blue: #3d79ff;
-$blue-dark: #2c3464;

@@ -17,7 +17,9 @@ mix.options({
 
 mix.setPublicPath('./');
 
-mix.js('assets/js/app.js', 'assets/dist/js/').options({
+mix.js('assets/js/app.js', 'assets/dist/js/').version().sourceMaps();
+
+mix.sass('assets/sass/app.scss', 'assets/dist/css/').options({
     autoprefixer: {
         options: {
             browsers: [
@@ -26,8 +28,6 @@ mix.js('assets/js/app.js', 'assets/dist/js/').options({
         }
     }
 }).version().sourceMaps();
-
-mix.sass('assets/sass/app.scss', 'assets/dist/css/').version().sourceMaps();
 
 // Full API
 // mix.js(src, output);

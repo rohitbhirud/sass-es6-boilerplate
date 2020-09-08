@@ -17,6 +17,8 @@ mix.options({
 
 mix.setPublicPath('./');
 
+mix.sourceMaps(true, 'source-maps');
+
 mix.js('assets/js/app.js', 'assets/dist/js/').version().sourceMaps();
 
 mix.sass('assets/sass/app.scss', 'assets/dist/css/').options({

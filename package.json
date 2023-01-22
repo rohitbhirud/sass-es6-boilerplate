@@ -13,8 +13,10 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "laravel-mix": "^6.0.24",
-        "sass": "^1.35.1",
+        "sass": "^1.57.1",
         "sass-loader": "^12.1.0"
+    },
+    "dependencies": {
+        "laravel-mix": "^6.0.49"
     }
 }

@@ -1,4 +1,4 @@
-@import './helpers/mq';
+@import "./helpers/mq";
 
 /******************************************
     Responsive Rules Using MQ-SASS
@@ -13,16 +13,18 @@ $mq-responsive: true;
 // Name your breakpoints in a way that creates a ubiquitous language
 // across team members. It will improve communication between
 // stakeholders, designers, developers, and testers.
-$mq-breakpoints: (small: 350px,
-mobile: 500px,
-mini: 769px,
-pro: 1025px,
-desktop: 1280px,
-wide: 1300px,
+$mq-breakpoints: (
+  small: 350px,
+  mobile: 500px,
+  mini: 769px,
+  pro: 1025px,
+  desktop: 1280px,
+  wide: 1300px,
 
-// Tweakpoints
-desktopAd: 810px,
-mobileLandscape: 480px);
+  // Tweakpoints
+  desktopAd: 810px,
+  mobileLandscape: 480px,
+);
 
 // Define the breakpoint from the $mq-breakpoints list that should
 // be used as the target width when outputting a static stylesheet
@@ -34,7 +36,8 @@ $mq-static-breakpoint: desktop;
 // to this list, ordered by width. For example: (mobile, tablet, desktop).
 $mq-show-breakpoints: (mobile, mini, pro, desktop, wide);
 
-
 /*******************************************
     Variables
 /*******************************************/
+$dark: #283f44;
+$green: #10ae75;

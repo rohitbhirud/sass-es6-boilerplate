@@ -2972,9 +2972,9 @@ img-loader@^4.0.0:
     loader-utils "^1.1.0"
 
 immutable@^4.0.0:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.2.2.tgz#2da9ff4384a4330c36d4d1bc88e90f9e0b0ccd16"
-  integrity sha512-fTMKDwtbvO5tldky9QZ2fMX7slR0mYpY5nbnFWYp0fOzDhHqhgIw9KoYgxLWsoNTS9ZHGauHj18DTyEw6BK3Og==
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.3.4.tgz#2e07b33837b4bb7662f288c244d1ced1ef65a78f"
+  integrity sha512-fsXeu4J4i6WNWSikpI88v/PcVflZz+6kMhUfIwc5SY+poQRPnaf5V7qds6SUyUN3cVxEzuCab7QIoLOQ+DQ1wA==
 
 import-fresh@^3.2.1:
   version "3.3.0"
@@ -4349,10 +4349,10 @@ sass-loader@^12.1.0:
     klona "^2.0.4"
     neo-async "^2.6.2"
 
-sass@^1.57.1:
-  version "1.57.1"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.57.1.tgz#dfafd46eb3ab94817145e8825208ecf7281119b5"
-  integrity sha512-O2+LwLS79op7GI0xZ8fqzF7X2m/m8WFfI02dHOdsK5R2ECeS5F62zrwg/relM1rjSLy7Vd/DiMNIvPrQGsA0jw==
+sass@^1.69.5:
+  version "1.69.5"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.69.5.tgz#23e18d1c757a35f2e52cc81871060b9ad653dfde"
+  integrity sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"

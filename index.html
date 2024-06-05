@@ -1,29 +1,736 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="/assets/dist/css/app.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-    <title>App</title>
-</head>
+    <link href="./assets/libs/flickity.css" rel="stylesheet" />
+    <link href="./assets/dist/css/app.css" rel="stylesheet" />
 
-<body>
+    <title>Doriame</title>
+  </head>
+
+  <body>
     <!-- contain main wrapper for website -->
-    <main class="wrapper">
+    <main class="wrapper home">
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="#">Doriame</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">let's get to work</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-        <h1>App</h1>
+      <section class="hero">
+        <h3 class="hero__subtitle">A Complete Experience Design Studio</h3>
+        <h1 class="hero__title">growth by design</h1>
+        <p class="hero__desc">
+          we are the best agency in India to grow your business by scalable and
+          logical strategies, UX, UI, brand and Digital Marketing solutions
+        </p>
+        <ul class="hero__tags">
+          <li><a href="#">Business Strategy</a></li>
+          <li><a href="#">User Experience | UX</a></li>
+          <li><a href="#">User Interface | UI</a></li>
+          <li><a href="#">Branding</a></li>
+          <li><a href="#">Packaging</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+        <div class="hero__slider main-carousel">
+          <div class="hero__slide carousel-cell">
+            <img src="/assets/images/home/hero/anrita.jpg" alt="" />
+            <span>Webapp Design for Anrita, a Cyber Security Software</span>
+          </div>
+          <div class="hero__slide carousel-cell">
+            <img src="/assets/images/home/hero/dabba.jpg" alt="" />
+            <span>Marketing Strategy for the Great Indian Derby, 2023</span>
+          </div>
+          <div class="hero__slide carousel-cell">
+            <img src="/assets/images/home/hero/derby.jpg" alt="" />
+            <span>Building a complete digital solution for Dabba Factory</span>
+          </div>
+          <div class="hero__slide carousel-cell">
+            <img src="/assets/images/home/hero/ekasha.jpg" alt="" />
+            <span>AI Enabled Game Design for Miko, an AI Bot.</span>
+          </div>
+          <div class="hero__slide carousel-cell">
+            <img src="/assets/images/home/hero/kirgo.jpg" alt="" />
+            <span>Complete Design and Strategy for Kirgo Activewear</span>
+          </div>
+          <div class="hero__slide carousel-cell">
+            <img src="/assets/images/home/hero/miko.jpg" alt="" />
+            <span>Webapp Design for Anrita, a Cyber Security Software</span>
+          </div>
+          <div class="hero__slide carousel-cell">
+            <img src="/assets/images/home/hero/niko.jpg" alt="" />
+            <span>Marketing Strategy for the Great Indian Derby, 2023</span>
+          </div>
+          <div class="hero__slide carousel-cell">
+            <img src="/assets/images/home/hero/vedically.jpg" alt="" />
+            <span>Building a complete digital solution for Dabba Factory</span>
+          </div>
+          <div class="hero__slide carousel-cell">
+            <img src="/assets/images/home/hero/zeronsec.jpg" alt="" />
+            <span>AI Enabled Game Design for Miko, an AI Bot.</span>
+          </div>
+        </div>
+      </section>
 
+      <section class="cta">
+        <div class="container">
+          <span class="cta__text"
+            >we create and execute the right strategy with an end to end data
+            driven design solution for your business</span
+          >
+          <a href="#" class="btn btn-light cta__btn">View Our Work</a>
+        </div>
+      </section>
+
+      <section class="process">
+        <div class="container">
+          <h2 class="process__title section__title">
+            how do we get it right <br />
+            <strong>every <span>single</span> time?</strong>
+          </h2>
+        </div>
+
+        <div class="container-fluid">
+          <div class="process__grid">
+            <div class="process__item">
+              <h3 class="process__tag">research</h3>
+              <div class="process__subtitle">
+                smart research and market study
+              </div>
+              <ul class="process__list">
+                <li>UX and UI Design Audit</li>
+                <li>Usability Testing</li>
+                <li>Competitor Analysis</li>
+                <li>Market Understanding</li>
+                <li>UX Research</li>
+                <li>Stakeholder Interviews</li>
+                <li>Documentation</li>
+              </ul>
+            </div>
+            <div class="process__item">
+              <h3 class="process__tag">build</h3>
+              <div class="process__subtitle">quick design and prototyping</div>
+              <ul class="process__list">
+                <li>Logo and Identity</li>
+                <li>Branding and Strategy</li>
+                <li>Packaging Design</li>
+                <li>User Experience Design | UX</li>
+                <li>User Interface Design | UI</li>
+                <li>Clickable Prototypes</li>
+                <li>Interaction Design</li>
+              </ul>
+            </div>
+            <div class="process__item">
+              <h3 class="process__tag">market</h3>
+              <div class="process__subtitle">
+                digital marketing and paid media
+              </div>
+              <ul class="process__list">
+                <li>Social Media Marketing</li>
+                <li>Content Creation | Graphics</li>
+                <li>SEO and GMB</li>
+                <li>Monthly Campaigns</li>
+                <li>Professional Photography</li>
+                <li>Explainer Videography</li>
+                <li>Video and Image Editing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients">
+        <div class="clients__slider main-carousel">
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/dabba.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/miko.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/polestar.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/thelilflea.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/vedically.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/zeronsec.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/dabba.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/miko.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/polestar.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/thelilflea.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/vedically.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/zeronsec.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/dabba.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/miko.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/polestar.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/thelilflea.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/vedically.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+          <div class="clients__slide">
+            <img
+              src="/assets/images/clients/zeronsec.png"
+              alt=""
+              class="carousel-cell"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="industry">
+        <div class="container">
+          <h2 class="industry__title section__title">
+            We have the right expert <br />
+            <strong>for your <span>industry</span></strong>
+          </h2>
+          <p class="industry__desc">
+            How? we only start work once we understand the industry we are
+            solving for, which gives us an edge above the rest.
+          </p>
+          <div class="industry__list">
+            <div class="industry__item">Healthcare and Pharma</div>
+            <div class="industry__item">AI/ML Tools</div>
+            <div class="industry__item">Fintech Products</div>
+            <div class="industry__item">Cyber Security</div>
+            <div class="industry__item">Luxury Brands</div>
+            <div class="industry__item">Enterprise Solutions</div>
+            <div class="industry__item">Supply Chain</div>
+            <div class="industry__item">Edtech</div>
+            <div class="industry__item">
+              <a href="#">
+                <span>Don't Trust us?</span>
+                <strong>Get a Free Growth Audit</strong></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="research">
+        <div class="container">
+          <h2 class="section__title">
+            check out our recent <br /><strong
+              ><span>audits</span> and research papers</strong
+            >
+          </h2>
+          <p class="research__text">
+            Our strategies and designs show results because the teams work on
+            each project like it's going to be their last
+          </p>
+        </div>
+
+        <div class="research__slider main-carousel">
+          <div class="research__slide carousel-cell">
+            <img src="/assets/images/research/1.jpg" alt="" />
+            <div class="research__content">
+              <div class="research__title">
+                Solving the missing baggage issue for a leading Indian Airline
+              </div>
+              <p class="research__desc">
+                Research, Strategy, UX and Visual Design
+              </p>
+              <a href="#" class="btn btn-primary research__cta"
+                >View Our Solution</a
+              >
+            </div>
+          </div>
+          <div class="research__slide carousel-cell">
+            <img src="/assets/images/research/2.jpg" alt="" />
+            <div class="research__content">
+              <div class="research__title">
+                Solving the missing baggage issue for a leading Indian Airline
+              </div>
+              <p class="research__desc">
+                Research, Strategy, UX and Visual Design
+              </p>
+              <a href="#" class="btn btn-primary research__cta"
+                >View Our Solution</a
+              >
+            </div>
+          </div>
+          <div class="research__slide carousel-cell">
+            <img src="/assets/images/research/3.jpg" alt="" />
+            <div class="research__content">
+              <div class="research__title">
+                Solving the missing baggage issue for a leading Indian Airline
+              </div>
+              <p class="research__desc">
+                Research, Strategy, UX and Visual Design
+              </p>
+              <a href="#" class="btn btn-primary research__cta"
+                >View Our Solution</a
+              >
+            </div>
+          </div>
+          <div class="research__slide carousel-cell">
+            <img src="/assets/images/research/4.jpg" alt="" />
+            <div class="research__content">
+              <div class="research__title">
+                Solving the missing baggage issue for a leading Indian Airline
+              </div>
+              <p class="research__desc">
+                Research, Strategy, UX and Visual Design
+              </p>
+              <a href="#" class="btn btn-primary research__cta"
+                >View Our Solution</a
+              >
+            </div>
+          </div>
+          <div class="research__slide carousel-cell">
+            <img src="/assets/images/research/1.jpg" alt="" />
+            <div class="research__content">
+              <div class="research__title">
+                Solving the missing baggage issue for a leading Indian Airline
+              </div>
+              <p class="research__desc">
+                Research, Strategy, UX and Visual Design
+              </p>
+              <a href="#" class="btn btn-primary research__cta"
+                >View Our Solution</a
+              >
+            </div>
+          </div>
+          <div class="research__slide carousel-cell">
+            <img src="/assets/images/research/2.jpg" alt="" />
+            <div class="research__content">
+              <div class="research__title">
+                Solving the missing baggage issue for a leading Indian Airline
+              </div>
+              <p class="research__desc">
+                Research, Strategy, UX and Visual Design
+              </p>
+              <a href="#" class="btn btn-primary research__cta"
+                >View Our Solution</a
+              >
+            </div>
+          </div>
+          <div class="research__slide carousel-cell">
+            <img src="/assets/images/research/3.jpg" alt="" />
+            <div class="research__content">
+              <div class="research__title">
+                Solving the missing baggage issue for a leading Indian Airline
+              </div>
+              <p class="research__desc">
+                Research, Strategy, UX and Visual Design
+              </p>
+              <a href="#" class="btn btn-primary research__cta"
+                >View Our Solution</a
+              >
+            </div>
+          </div>
+          <div class="research__slide carousel-cell">
+            <img src="/assets/images/research/4.jpg" alt="" />
+            <div class="research__content">
+              <div class="research__title">
+                Solving the missing baggage issue for a leading Indian Airline
+              </div>
+              <p class="research__desc">
+                Research, Strategy, UX and Visual Design
+              </p>
+              <a href="#" class="btn btn-primary research__cta"
+                >View Our Solution</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="redesign">
+        <div class="redesign__container">
+          <div class="redesign__inner">
+            <img
+              src="/assets/images/home/dashboard.png"
+              class="redesign__img"
+              alt=""
+            />
+            <span class="redesign__title">Cyber Security</span>
+            <span class="redesign__sidetitle">REDESIGN PROJECT</span>
+            <div class="redesign__side1 redesign__side">
+              <img src="/assets/images/home/dash_side1.svg" alt="" />
+              <span
+                >Fighting Cyber<br />
+                Attacks in Style</span
+              >
+            </div>
+            <div class="redesign__side2 redesign__side">
+              <img src="/assets/images/home/dash_side2.svg" alt="" />
+              <span
+                >Making security<br />
+                more usable</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recent">
+        <div class="container">
+          <h2 class="section__title recent__title">
+            Take a look at <br /><strong>our recent work</strong>
+          </h2>
+          <p class="recent__desc">
+            Our strategies and designs show results because the teams work on
+            each project like it's going to be their last
+          </p>
+        </div>
+
+        <div class="recent__slider main-carousel">
+          <div class="recent__slide carousel-cell">
+            <div class="recent__slide-inner">
+              <img
+                src="assets/images/home/worl/kirgo_bg.jpg"
+                alt=""
+                class="recent__slide-bg"
+              />
+              <img
+                src="/assets/images/home/worl/kirgo.png"
+                alt="kirgo"
+                class="recent__slide-img"
+              />
+              <div class="recent__slide-content">
+                <img
+                  src="assets/images/clients/kirgo.svg"
+                  alt=""
+                  class="recent__slide-logo"
+                />
+                <div class="recent__slide-tag">
+                  <span>User Experience | UX</span>
+                  <span>User Interface | UI</span>
+                  <span>Interaction Design</span>
+                </div>
+                <p class="recent__slide-desc">
+                  we provide an end to end data driven design solution and
+                  strategy for your brand, website, app and social media we
+                  provide an end to end data driven design solution and strategy
+                  for your brand, website, app and social media
+                </p>
+                <a href="#" class="btn btn-light recent__slide-cta"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="recent__slide carousel-cell">
+            <div class="recent__slide-inner">
+              <img
+                src="assets/images/home/worl/kirgo_bg.jpg"
+                alt=""
+                class="recent__slide-bg"
+              />
+              <img
+                src="/assets/images/home/worl/kirgo.png"
+                alt="kirgo"
+                class="recent__slide-img"
+              />
+              <div class="recent__slide-content">
+                <img
+                  src="assets/images/clients/kirgo.svg"
+                  alt=""
+                  class="recent__slide-logo"
+                />
+                <div class="recent__slide-tag">
+                  <span>User Experience | UX</span>
+                  <span>User Interface | UI</span>
+                  <span>Interaction Design</span>
+                </div>
+                <p class="recent__slide-desc">
+                  we provide an end to end data driven design solution and
+                  strategy for your brand, website, app and social media we
+                  provide an end to end data driven design solution and strategy
+                  for your brand, website, app and social media
+                </p>
+                <a href="#" class="btn btn-light recent__slide-cta"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="recent__slide carousel-cell">
+            <div class="recent__slide-inner">
+              <img
+                src="assets/images/home/worl/kirgo_bg.jpg"
+                alt=""
+                class="recent__slide-bg"
+              />
+              <img
+                src="/assets/images/home/worl/kirgo.png"
+                alt="kirgo"
+                class="recent__slide-img"
+              />
+              <div class="recent__slide-content">
+                <img
+                  src="assets/images/clients/kirgo.svg"
+                  alt=""
+                  class="recent__slide-logo"
+                />
+                <div class="recent__slide-tag">
+                  <span>User Experience | UX</span>
+                  <span>User Interface | UI</span>
+                  <span>Interaction Design</span>
+                </div>
+                <p class="recent__slide-desc">
+                  we provide an end to end data driven design solution and
+                  strategy for your brand, website, app and social media we
+                  provide an end to end data driven design solution and strategy
+                  for your brand, website, app and social media
+                </p>
+                <a href="#" class="btn btn-light recent__slide-cta"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="contact__title section__title">
+            looking to build your <br /><strong
+              >brand, product or market?</strong
+            >
+          </h2>
+
+          <form>
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Full Name"
+                  />
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Phone Number"
+                  />
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email Address"
+                  />
+                </div>
+              </div>
+
+              <div class="contact__footer">
+                <span
+                  >Leave your details and we will get in touch with you in 2
+                  working days</span
+                >
+                <button type="submit" class="btn btn-primary">
+                  Let's Get To Work
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <img
+                  src="/assets/images/logo_white.svg"
+                  alt=""
+                  class="footer__logo"
+                />
+              </div>
+              <div class="col-6">
+                <div class="audit">
+                  <span class="audit__note">Having doubts?</span>
+                  <h5 class="audit__title">
+                    Get a free ux audit for your brand.
+                  </h5>
+                  <p class="audit__desc">
+                    Our experts deliver a brief audit report in 12 working days
+                    to help you understand if you are on the right track
+                  </p>
+
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Leave your email address here"
+                      aria-label="Leave your email address here"
+                    />
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      id="button-addon2"
+                    >
+                      Get a free audit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom"></div>
+      </footer>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-    <script src="/assets/dist/js/app.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/libs/flickity.pkgd.min.js"></script>
+    <script src="./assets/dist/js/app.js"></script>
+  </body>
 </html>

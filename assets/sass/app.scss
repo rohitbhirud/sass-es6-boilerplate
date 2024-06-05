@@ -1,7 +1,8 @@
-@import 'base';
-@import 'variables';
-@import 'mixins';
-@import 'helpers';
+@import "base";
+@import "variables";
+@import "mixins";
+@import "helpers";
 
+@import "components/navbar";
 
-@import 'pages/home';
+@import "pages/home";
